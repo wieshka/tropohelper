@@ -1,0 +1,11 @@
+template_path: buckets.py
+sceptre_user_data:
+  buckets:
+    -
+        name: SampleBucket
+        output: True
+        description: "This will create simple S3 bucket, and since output is set to True, it will be added to CF Output"
+    -
+        name: OtherSampleBucket
+        output: False
+        description: "This as well will create S3 bucket but it won't be added to CF Output"

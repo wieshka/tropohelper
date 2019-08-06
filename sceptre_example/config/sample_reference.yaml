@@ -1,0 +1,5 @@
+template_path: not_created_just_an_example.py
+dependencies:
+  - buckets.yaml
+parameters:
+  DataLakeBucket: !stack_output buckets.yaml::SampleBucketOutput
